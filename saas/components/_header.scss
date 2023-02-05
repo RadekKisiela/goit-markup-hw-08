@@ -86,3 +86,17 @@
     color: var(--text-color-quaternary);
   }
 }
+
+@media (max-width: 768px) {
+  .header {
+    &__list,
+    &__contact {
+      display: none;
+      visibility: hidden;
+    }
+  }
+
+  .logo {
+    padding-left: 15px;
+  }
+}
