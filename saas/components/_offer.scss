@@ -1,0 +1,24 @@
+.offer {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__icons {
+    margin-bottom: 30px;
+  }
+  &__title {
+    color: var(--text-color-primary);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    margin-bottom: 10px;
+  }
+  &__paragraph {
+    color: var(--text-color-quinary);
+    font-size: 14px;
+    line-height: 2;
+    letter-spacing: 0.03em;
+  }
+}

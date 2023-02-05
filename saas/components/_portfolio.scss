@@ -1,0 +1,88 @@
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  &__list {
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: center;
+  }
+  &__button {
+    color: var(--text-color-primary);
+    font-weight: 500;
+    background-color: var(--background-color-quinary);
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-right: 8px;
+    padding: 6px 22px;
+    border-radius: 4px;
+    &:focus,
+    &:hover {
+      color: var(--text-color-quaternary);
+      background-color: var(--background-color-quaternary);
+      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12);
+    }
+  }
+  &__box {
+    position: relative;
+    background: var(--background-color-primary);
+    border: 1px solid #eee;
+    overflow: hidden;
+    &:hover {
+      background: var(--background-color-primary);
+      border: 1px solid #eee;
+      box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16);
+      .overley {
+        bottom: 0;
+      }
+    }
+  }
+  &__overley {
+    position: absolute;
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--text-color-quaternary);
+    line-height: 1.55;
+    letter-spacing: 0.3;
+    padding: 49px 45px 49px 24px;
+    width: 370px;
+    height: 294px;
+    background: rgba(33, 150, 243, 0.9);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translateY(0);
+  }
+  &__paragraph {
+    color: var(--text-color-quinary);
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+    padding-left: 24px;
+    padding-bottom: 20px;
+  }
+  &_label {
+    position: relative;
+    background-color: var(--background-color-primary);
+    z-index: 1;
+  }
+  &__title {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    line-height: 2;
+    color: var(--text-color-primary);
+    padding-left: 24px;
+    padding-top: 20px;
+  }
+}
+
+.portfolio__box:hover .overley {
+  bottom: 0;
+}
+
+.portfolio__box:hover .portfolio__overley,
+.portfolio__box:focus .portfolio__overley {
+  transform: translateY(-137.5%);
+}

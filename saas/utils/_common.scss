@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  &__header {
+    color: var(--text-color-primary);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+  }
+  &--lorem {
+    padding-top: 94px;
+    background-color: var(--background-color-primary);
+  }
+}
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+body {
+  font-family: var(--font-primary);
+  color: var(--text-color-primary);
+}
