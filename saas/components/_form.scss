@@ -31,6 +31,12 @@
     position: relative;
     width: 448px;
     height: 40px;
+    &:hover,
+    &:focus {
+      .form__icon {
+        fill: var(--background-color-quaternary);
+      }
+    }
   }
   &__paragraph {
     color: var(--color-tertiary);
@@ -52,8 +58,12 @@
     &:focus {
       border: 1px solid var(--background-color-quaternary);
       outline: none;
+      .form__icon {
+        fill: var(--background-color-quaternary);
+      }
     }
   }
+
   &__icon {
     position: absolute;
     margin-top: 11px;
@@ -62,12 +72,6 @@
     fill: var(--text-color-primary);
   }
 
-  &:hover,
-  &:focus {
-    .form__icons {
-      fill: var(--background-color-quaternary);
-    }
-  }
   &__form-checkbox:checked {
     border: none;
     background-image: url('../images/icons.svg#icon-Vector');

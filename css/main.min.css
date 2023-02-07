@@ -773,6 +773,10 @@ body {
   width: 448px;
   height: 40px;
 }
+.form__label:hover .form__icon,
+.form__label:focus .form__icon {
+  fill: var(--background-color-quaternary);
+}
 .form__paragraph {
   color: var(--color-tertiary);
   font-size: 12px;
@@ -795,16 +799,16 @@ body {
   border: 1px solid var(--background-color-quaternary);
   outline: none;
 }
+.form__field:hover .form__icon,
+.form__field:focus .form__icon {
+  fill: var(--background-color-quaternary);
+}
 .form__icon {
   position: absolute;
   margin-top: 11px;
   margin-left: 12px;
   left: 0;
   fill: var(--text-color-primary);
-}
-.form:hover .form__icons,
-.form:focus .form__icons {
-  fill: var(--background-color-quaternary);
 }
 .form__form-checkbox:checked {
   border: none;
