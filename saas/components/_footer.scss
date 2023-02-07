@@ -60,12 +60,11 @@
     align-items: center;
     padding: 10px 32px 10px 42px;
   }
-}
-
-.address {
-  color: var(--text-color-quaternary);
-  font-size: 14px;
-  line-height: 2;
-  font-style: normal;
-  padding-top: 20px;
+  &__address {
+    color: var(--text-color-quaternary);
+    font-size: 14px;
+    line-height: 2;
+    font-style: normal;
+    padding-top: 20px;
+  }
 }

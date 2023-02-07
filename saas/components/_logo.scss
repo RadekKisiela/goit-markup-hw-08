@@ -1,0 +1,16 @@
+.logo {
+  color: var(--text-color-tertiary);
+  font-family: var(--font-secondary);
+  font-weight: 700;
+  font-size: 26px;
+  text-align: center;
+  line-height: 1.17;
+
+  &--dark {
+    color: var(--text-color-secondary);
+    margin-right: 93px;
+  }
+  &--light {
+    color: var(--text-color-quaternary);
+  }
+}

@@ -53,7 +53,6 @@
     background: rgba(33, 150, 243, 0.9);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transform: translateY(0);
-    z-index: 1;
   }
   &__paragraph {
     color: var(--text-color-quinary);
@@ -63,10 +62,10 @@
     padding-left: 24px;
     padding-bottom: 20px;
   }
-  &_label {
+  &__label {
     position: relative;
     background-color: var(--background-color-primary);
-    z-index: 2;
+    z-index: 1;
   }
   &__title {
     font-size: 18px;

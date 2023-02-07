@@ -1,0 +1,26 @@
+.social-media {
+  display: flex;
+  justify-content: center;
+  padding-top: 16px;
+  gap: 10px;
+  &__icon {
+    fill: #afb1b8;
+  }
+  &__button {
+    background: rgba(255, 255, 255, 0.1);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 12px;
+    border: none;
+    margin-bottom: 30px;
+    &:focus,
+    &:hover {
+      background: var(--background-color-quaternary);
+      .social-media__icons {
+        fill: var(--background-color-primary);
+      }
+    }
+  }
+}

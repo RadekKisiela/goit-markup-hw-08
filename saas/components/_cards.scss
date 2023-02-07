@@ -1,6 +1,3 @@
-.section--dark {
-  background-color: var(--background-color-quinary);
-}
 .cards {
   display: flex;
   flex-wrap: wrap;
@@ -46,32 +43,5 @@
     background: var(--background-color-tertiary);
     opacity: 0.8;
     top: 224px;
-  }
-}
-
-.social-media {
-  display: flex;
-  justify-content: center;
-  padding-top: 16px;
-  gap: 10px;
-  &__icon {
-    fill: #afb1b8;
-  }
-  &__button {
-    background: rgba(255, 255, 255, 0.1);
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    cursor: pointer;
-    padding: 12px;
-    border: none;
-    margin-bottom: 30px;
-    &:focus,
-    &:hover {
-      background: var(--background-color-quaternary);
-      .social-media__icons {
-        fill: var(--background-color-primary);
-      }
-    }
   }
 }
