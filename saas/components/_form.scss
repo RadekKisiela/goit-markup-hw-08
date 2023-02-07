@@ -58,7 +58,7 @@
     &:focus {
       border: 1px solid var(--background-color-quaternary);
       outline: none;
-      .form__icon {
+      & + .form__icon {
         fill: var(--background-color-quaternary);
       }
     }
