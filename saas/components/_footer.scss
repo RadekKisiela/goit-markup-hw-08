@@ -23,18 +23,6 @@
     font-style: normal;
   }
 
-  &__icon {
-    fill: var(--background-color-primary);
-  }
-
-  &__newsletter {
-    padding-top: 16px;
-
-    &-icon {
-      fill: var(--background-color-primary);
-      margin-left: 24px;
-    }
-  }
   &__field {
     padding: 15px 185px 15px 16px;
     margin-right: 12px;
@@ -66,5 +54,10 @@
     line-height: 2;
     font-style: normal;
     padding-top: 20px;
+  }
+  &__link {
+    @extend .header__link;
+    margin-bottom: 9px;
+    margin-top: 9px;
   }
 }
