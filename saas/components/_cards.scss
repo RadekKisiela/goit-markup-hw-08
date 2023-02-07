@@ -1,47 +1,102 @@
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
-}
-.card {
-  position: relative;
+@media (min-width: 480px), (max-width: 767px) {
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  .card {
+    position: relative;
 
-  &__name {
-    color: var(--text-color-primary);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.33;
-    text-align: center;
-    letter-spacing: 0.03em;
-    padding-top: 30px;
-    padding-bottom: 10px;
+    &__name {
+      color: var(--text-color-primary);
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 1.33;
+      text-align: center;
+      letter-spacing: 0.03em;
+      padding-top: 30px;
+      padding-bottom: 10px;
+    }
+    &__paragraph {
+      color: var(--text-color-quinary);
+      font-size: 16px;
+      line-height: 1.33;
+      text-align: center;
+      letter-spacing: 0.03em;
+      padding-bottom: 30px;
+    }
+    &__box {
+      background: var(--background-color-primary);
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+      border-radius: 0px 0px 4px 4px;
+      width: 450px;
+      height: 622px;
+    }
+    &__label {
+      position: absolute;
+      text-align: center;
+      padding-top: 27px;
+      width: 370px;
+      height: 70px;
+      font-weight: 700;
+      font-size: 14px;
+      color: var(--text-color-quaternary);
+      background: var(--background-color-tertiary);
+      opacity: 0.8;
+      top: 224px;
+    }
   }
-  &__paragraph {
-    color: var(--text-color-quinary);
-    font-size: 16px;
-    line-height: 1.33;
-    text-align: center;
-    letter-spacing: 0.03em;
-    padding-bottom: 30px;
+}
+@media (min-width: 1200px) {
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
   }
-  &__box {
-    background: var(--background-color-primary);
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-      0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
-  }
-  &__label {
-    position: absolute;
-    text-align: center;
-    padding-top: 27px;
-    width: 370px;
-    height: 70px;
-    font-weight: 700;
-    font-size: 14px;
-    color: var(--text-color-quaternary);
-    background: var(--background-color-tertiary);
-    opacity: 0.8;
-    top: 224px;
+  .card {
+    position: relative;
+
+    &__name {
+      color: var(--text-color-primary);
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 1.33;
+      text-align: center;
+      letter-spacing: 0.03em;
+      padding-top: 30px;
+      padding-bottom: 10px;
+    }
+    &__paragraph {
+      color: var(--text-color-quinary);
+      font-size: 16px;
+      line-height: 1.33;
+      text-align: center;
+      letter-spacing: 0.03em;
+      padding-bottom: 30px;
+    }
+    &__box {
+      background: var(--background-color-primary);
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+      border-radius: 0px 0px 4px 4px;
+      width: 270px;
+      height: 428px;
+    }
+    &__label {
+      position: absolute;
+      text-align: center;
+      padding-top: 27px;
+      width: 370px;
+      height: 70px;
+      font-weight: 700;
+      font-size: 14px;
+      color: var(--text-color-quaternary);
+      background: var(--background-color-tertiary);
+      opacity: 0.8;
+      top: 224px;
+    }
   }
 }
