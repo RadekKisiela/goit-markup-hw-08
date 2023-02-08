@@ -1,24 +1,36 @@
 @media (min-width: 480px) {
   .footer {
     background-color: var(--background-color-tertiary);
+    padding-top: 60px;
+    padding-bottom: 60px;
 
+    &__list {
+      display: flex;
+      gap: 70px;
+      flex-wrap: wrap;
+    }
     &__title {
-      text-align: center;
       color: var(--text-color-quaternary);
       font-weight: 700;
       font-size: 16px;
       letter-spacing: 0.03em;
       line-height: 1.17;
     }
-
+    &__paragraph {
+      color: var(--background-color-primary);
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.71;
+      letter-spacing: 0.03em;
+      font-style: normal;
+    }
     &__field {
-      padding: 15px 250px 15px 16px;
+      padding: 15px 240px 15px 16px;
       border: 1px solid rgba(255, 255, 255, 0.3);
       filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
       border-radius: 4px;
       background: #2f303a;
       color: var(--color-quaternary);
-      margin-left: 15px;
     }
     &__button {
       display: flex;
@@ -34,6 +46,8 @@
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
       border-radius: 4px;
       padding: 10px 24px 10px 42px;
+      margin-top: 20px;
+      margin-bottom: 30px;
     }
     &__address {
       color: var(--text-color-quaternary);
@@ -44,9 +58,7 @@
     }
     &__link {
       align-items: center;
-
       color: var(--text-color-quinary);
-
       margin-bottom: 9px;
       margin-top: 9px;
     }
@@ -55,16 +67,19 @@
         display: flex;
         justify-content: space-around;
         text-align: center;
+        padding-bottom: 60px;
       }
       &-media {
         display: flex;
         justify-content: center;
         text-align: center;
+        padding-bottom: 60px;
       }
       &-newsletter {
         display: flex;
         justify-content: center;
         text-align: center;
+        padding-bottom: 60px;
       }
     }
   }
@@ -72,11 +87,9 @@
 @media (min-width: 1200px) {
   .footer {
     background-color: var(--background-color-tertiary);
-    padding-top: 60px;
-    padding-bottom: 60px;
 
     &__list {
-      display: flex;
+      flex-wrap: nowrap;
       gap: 70px;
     }
     &__title {
@@ -116,9 +129,9 @@
       letter-spacing: 0.06em;
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
       border-radius: 4px;
-      padding-left: 42px;
       align-items: center;
       padding: 10px 32px 10px 42px;
+      margin-left: 0;
     }
     &__address {
       color: var(--text-color-quaternary);
@@ -139,6 +152,14 @@
       font-style: normal;
       margin-bottom: 9px;
       margin-top: 9px;
+    }
+    &__box {
+      &-logo {
+        text-align: left;
+      }
+      &-media {
+        text-align: start;
+      }
     }
   }
 }

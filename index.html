@@ -54,7 +54,7 @@
       <div class="container">
         <ul class="offer">
           <li class="offer__item">
-            <svg class="offer__icon" width="270px" height="120px" radius="4px">
+            <svg class="offer__icon" radius="4px">
               <use href="./images/icons.svg#icon-Group-1"></use>
             </svg>
             <h3 class="offer__title">Lorem ipsum</h3>
@@ -64,7 +64,7 @@
             </p>
           </li>
           <li class="offer__item">
-            <svg class="offer__icon" width="270px" height="120px" radius="4px">
+            <svg class="offer__icon" radius="4px">
               <use href="./images/icons.svg#icon-Group-2"></use>
             </svg>
             <h3 class="offer__title">Lorem ipsum</h3>
@@ -74,7 +74,7 @@
             </p>
           </li>
           <li class="offer__item">
-            <svg class="offer__icon" width="270px" height="120px" radius="4px">
+            <svg class="offer__icon radius=" 4px"">
               <use href="./images/icons.svg#icon-Group-3"></use>
             </svg>
             <h3 class="offer__title">Lorem ipsum</h3>
@@ -84,7 +84,7 @@
             </p>
           </li>
           <li class="offer__item">
-            <svg class="offer__icon" width="270px" height="120px" radius="4px">
+            <svg class="offer__icon radius=" 4px"">
               <use href="./images/icons.svg#icon-Group-4"></use>
             </svg>
             <h3 class="offer__title">Lorem ipsum</h3>
@@ -128,7 +128,18 @@
         <ul class="cards">
           <li>
             <div class="card__box">
-              <img src="./images/man.jpg" alt="Mężczyzna" width="270" height="260" />
+              <picture>
+                <source srcset="./images/man.jpg" media="(min-width:1200px)" />
+                <img src="./images/man.jpg" alt="Mężczyzna" width="270" height="260" />
+              </picture>
+              <!-- <picture>
+                <source srcset="./images/mantab.jpg" media="(min-width:768px)" />
+                <img src="./images/mantab.jpg" alt="Mężczyzna" width="354" height="374" />
+              </picture>
+              <picture>
+                <source srcset="./images/mantel.jpg" media="(min-width:480px)" />
+                <img src="./images/mantel.jpg" alt="Mężczyzna" width="450" height="460" /> -->
+              </picture>
               <h3 class="card__name">John Doe</h3>
               <p class="card__paragraph">Product Designer</p>
               <div class="social-media">

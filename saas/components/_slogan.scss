@@ -1,42 +1,57 @@
-.slogan {
-  display: flex;
-  background-color: var(--background-color-tertiary);
-  background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 80%),
-    url(../images/overlay.jpg);
-
-  text-align: center;
-  justify-content: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  background-size: cover;
-
-  &__title {
-    color: var(--text-color-quaternary);
-    letter-spacing: 0.06em;
-    font-size: 44px;
-    line-height: 1.36;
-    margin-bottom: 30px;
-    width: 696px;
-  }
-  &__button {
-    color: var(--text-color-quaternary);
-    font-weight: 700;
-    background-color: var(--background-color-quaternary);
-    cursor: pointer;
-    font-size: 16px;
-    line-height: 1.87;
-    border: none;
-    letter-spacing: 0.06em;
-    padding: 10px 41px 10px 42px;
-    border-radius: 4px;
-  }
-}
-@media (min-width: 480px), (max-width: 767px) {
+@media (min-width: 480px) {
   .slogan {
+    display: flex;
+    background-color: var(--background-color-tertiary);
+    background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 80%),
+      url(../images/overlaytel.jpg);
+    text-align: center;
+    justify-content: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-size: cover;
+
     &__title {
+      color: var(--text-color-quaternary);
+      letter-spacing: 0.06em;
       font-size: 26px;
       line-height: 1.61;
+      margin-bottom: 30px;
       width: 365px;
+    }
+    &__button {
+      color: var(--text-color-quaternary);
+      font-weight: 700;
+      background-color: var(--background-color-quaternary);
+      cursor: pointer;
+      font-size: 16px;
+      line-height: 1.87;
+      border: none;
+      letter-spacing: 0.06em;
+      padding: 10px 41px 10px 42px;
+      border-radius: 4px;
+    }
+  }
+}
+@media (min-width: 768px) {
+  .slogan {
+    background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 80%),
+      url(../images/overlaytab.jpg);
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
+@media (min-width: 1200px) {
+  .slogan {
+    background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 80%),
+      url(../images/overlay.jpg);
+    padding-top: 200px;
+    padding-bottom: 200px;
+
+    &__title {
+      color: var(--text-color-quaternary);
+      font-size: 44px;
+      line-height: 1.36;
+      width: 696px;
     }
   }
 }
