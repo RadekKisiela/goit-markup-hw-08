@@ -29,7 +29,23 @@
     }
   }
 }
-
+@media (min-width: 768px) {
+  .offer {
+    display: flex;
+    flex-wrap: wrap;
+    &__icon {
+      justify-content: center;
+      width: 354px;
+    }
+    &__title {
+      text-align: start;
+    }
+    &__paragraph {
+      width: 354px;
+      padding-bottom: 30px;
+    }
+  }
+}
 @media (min-width: 1200px) {
   .offer {
     position: relative;

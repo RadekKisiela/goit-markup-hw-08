@@ -68,12 +68,14 @@
         justify-content: space-around;
         text-align: center;
         padding-bottom: 60px;
+        padding-left: 115px;
       }
       &-media {
         display: flex;
         justify-content: center;
         text-align: center;
         padding-bottom: 60px;
+        padding-left: 137px;
       }
       &-newsletter {
         display: flex;
@@ -156,9 +158,11 @@
     &__box {
       &-logo {
         text-align: left;
+        padding-left: 0;
       }
       &-media {
         text-align: start;
+        padding-left: 0;
       }
     }
   }
