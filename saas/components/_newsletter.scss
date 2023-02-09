@@ -1,6 +1,7 @@
 .newsletter {
   display: flex;
-  padding-top: 16px;
+  flex-direction: column;
+  margin-top: 20px;
 
   &__icon {
     fill: var(--background-color-primary);

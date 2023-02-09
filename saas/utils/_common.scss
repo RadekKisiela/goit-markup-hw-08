@@ -31,15 +31,19 @@ a {
 }
 
 .container {
+  max-width: 480px;
   margin: 0 auto;
-  max-width: 1200px;
+  padding: 0px 15px;
 }
 body {
   font-family: var(--font-primary);
   color: var(--text-color-primary);
 }
 
-@media (min-width: 480px) {
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
   .section--is-hiden {
     visibility: hidden;
     display: none;
@@ -49,5 +53,8 @@ body {
   .section--is-hiden {
     visibility: visible;
     display: flex;
+  }
+  .container {
+    max-width: 1200px;
   }
 }

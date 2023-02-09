@@ -4,6 +4,7 @@
     padding-top: 60px;
     padding-bottom: 60px;
     display: flex;
+    justify-content: space-around;
     &__list {
       display: flex;
       gap: 70px;
@@ -15,8 +16,10 @@
       font-size: 16px;
       letter-spacing: 0.03em;
       line-height: 1.17;
+      text-align: center;
     }
     &__paragraph {
+      justify-content: center;
       color: var(--background-color-primary);
       font-weight: 400;
       font-size: 14px;
@@ -25,29 +28,38 @@
       font-style: normal;
     }
     &__field {
-      padding: 15px 240px 15px 16px;
+      padding: 15px 295px 15px 16px;
+      max-width: 450px;
+      font-size: 16px;
+      line-height: 1.25;
+
       border: 1px solid rgba(255, 255, 255, 0.3);
       filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
       border-radius: 4px;
       background: #2f303a;
       color: var(--color-quaternary);
     }
-    &__button {
+    &__wrapper {
       display: flex;
-      margin-left: 140px;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    &__button {
+      display: inline-flex;
       color: var(--text-color-quaternary);
       font-weight: 700;
       background-color: var(--background-color-quaternary);
-      align-items: center;
+      cursor: pointer;
       font-size: 16px;
       line-height: 1.87;
       border: none;
       letter-spacing: 0.06em;
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
       border-radius: 4px;
-      padding: 10px 24px 10px 42px;
-      margin-top: 20px;
-      margin-bottom: 30px;
+      align-items: center;
+      padding: 10px 32px 10px 42px;
+      margin-left: 0;
     }
     &__address {
       color: var(--text-color-quaternary);
@@ -64,21 +76,16 @@
     }
     &__box {
       &-logo {
-        justify-content: space-around;
+        display: flex;
+        width: 280px;
         text-align: center;
-        padding-bottom: 60px;
-        padding-left: 115px;
       }
       &-media {
-        justify-content: center;
-        text-align: center;
-        padding-bottom: 60px;
-        padding-left: 137px;
+        display: flex;
       }
       &-newsletter {
+        display: flex;
         justify-content: center;
-        text-align: center;
-        padding-bottom: 60px;
       }
     }
   }
@@ -86,17 +93,6 @@
 @media (min-width: 768px) {
   .footer {
     padding-top: 65px;
-    &__box {
-      &-logo {
-        padding-left: 76px;
-      }
-      &-media {
-        padding-left: 89px;
-      }
-      &-newsletter {
-        padding-left: 166px;
-      }
-    }
   }
 }
 @media (min-width: 1200px) {
@@ -105,32 +101,12 @@
 
     &__list {
       flex-wrap: nowrap;
-      gap: 70px;
     }
     &__title {
-      color: var(--text-color-quaternary);
-      font-weight: 700;
-      font-size: 16px;
-      letter-spacing: 0.03em;
-      line-height: 1.17;
+      text-align: start;
     }
-    &__paragraph {
-      color: var(--background-color-primary);
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 1.71;
-      letter-spacing: 0.03em;
-      font-style: normal;
-    }
-
     &__field {
-      padding: 15px 185px 15px 16px;
-      margin-right: 12px;
-      border: 1px solid rgba(255, 255, 255, 0.3);
-      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-      border-radius: 4px;
-      background: #2f303a;
-      color: var(--color-quaternary);
+      padding: 15px 120px 15px 16px;
     }
     &__button {
       display: inline-flex;
@@ -170,12 +146,10 @@
     }
     &__box {
       &-logo {
-        text-align: left;
-        padding-left: 0;
+        text-align: start;
       }
       &-media {
         text-align: start;
-        padding-left: 0;
       }
     }
   }

@@ -1,9 +1,16 @@
 .social-media {
   display: flex;
-  justify-content: center;
-  padding-top: 16px;
   gap: 10px;
-
+  justify-content: space-around;
+  padding-right: 32px;
+  padding-left: 32px;
+  padding-top: 16px;
+  &--footer {
+    display: flex;
+    gap: 10px;
+    padding-top: 20px;
+    justify-content: space-around;
+  }
   &__icon {
     fill: #afb1b8;
     &--footer {
@@ -18,7 +25,6 @@
     cursor: pointer;
     padding: 12px;
     border: none;
-    margin-bottom: 30px;
     &:focus,
     &:hover {
       background: var(--background-color-quaternary);

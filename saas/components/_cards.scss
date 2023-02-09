@@ -47,6 +47,11 @@
       opacity: 0.8;
       top: 224px;
     }
+    &__description {
+      display: flex;
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
   }
 }
 @media (min-width: 768px) {
