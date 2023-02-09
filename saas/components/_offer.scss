@@ -10,6 +10,7 @@
       width: 450px;
       height: 120px;
       background-color: #f5f4fa;
+      border-radius: 4px;
     }
     &__title {
       text-align: center;
@@ -33,6 +34,7 @@
   .offer {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
     &__icon {
       justify-content: center;
       width: 354px;
@@ -50,8 +52,11 @@
   .offer {
     position: relative;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+    &__item {
+      margin-left: 0;
+    }
     &__icon {
       margin-bottom: 30px;
       width: 270px;
@@ -66,10 +71,7 @@
       margin-bottom: 10px;
     }
     &__paragraph {
-      color: var(--text-color-quinary);
-      font-size: 14px;
-      line-height: 2;
-      letter-spacing: 0.03em;
+      width: 270px;
     }
   }
 }

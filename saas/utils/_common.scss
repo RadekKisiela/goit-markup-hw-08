@@ -45,3 +45,9 @@ body {
     display: none;
   }
 }
+@media (min-width: 1200px) {
+  .section--is-hiden {
+    visibility: visible;
+    display: flex;
+  }
+}

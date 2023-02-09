@@ -3,7 +3,7 @@
     background-color: var(--background-color-tertiary);
     padding-top: 60px;
     padding-bottom: 60px;
-
+    display: flex;
     &__list {
       display: flex;
       gap: 70px;
@@ -64,24 +64,37 @@
     }
     &__box {
       &-logo {
-        display: flex;
         justify-content: space-around;
         text-align: center;
         padding-bottom: 60px;
         padding-left: 115px;
       }
       &-media {
-        display: flex;
         justify-content: center;
         text-align: center;
         padding-bottom: 60px;
         padding-left: 137px;
       }
       &-newsletter {
-        display: flex;
         justify-content: center;
         text-align: center;
         padding-bottom: 60px;
+      }
+    }
+  }
+}
+@media (min-width: 768px) {
+  .footer {
+    padding-top: 65px;
+    &__box {
+      &-logo {
+        padding-left: 76px;
+      }
+      &-media {
+        padding-left: 89px;
+      }
+      &-newsletter {
+        padding-left: 166px;
       }
     }
   }
