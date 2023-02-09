@@ -3,7 +3,7 @@
     display: flex;
     background-color: var(--background-color-tertiary);
     background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 80%),
-      url(../images/desktop/overlaytel.jpg);
+      url(../images/mobile/overlay.jpg);
     text-align: center;
     justify-content: center;
     padding-top: 200px;
@@ -35,7 +35,7 @@
 @media (min-width: 768px) {
   .slogan {
     background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 80%),
-      url(../images/desktop/overlaytab.jpg);
+      url(../images/tablet/overlay.jpg);
     padding-top: 200px;
     padding-bottom: 200px;
   }
