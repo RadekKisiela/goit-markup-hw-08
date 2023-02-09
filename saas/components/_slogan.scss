@@ -3,7 +3,7 @@
     display: flex;
     background-color: var(--background-color-tertiary);
     background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 80%),
-      url(../images/overlaytel.jpg);
+      url(../images/desktop/overlaytel.jpg);
     text-align: center;
     justify-content: center;
     padding-top: 200px;
@@ -35,7 +35,7 @@
 @media (min-width: 768px) {
   .slogan {
     background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 80%),
-      url(../images/overlaytab.jpg);
+      url(../images/desktop/overlaytab.jpg);
     padding-top: 200px;
     padding-bottom: 200px;
   }
@@ -43,7 +43,7 @@
 @media (min-width: 1200px) {
   .slogan {
     background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 80%),
-      url(../images/overlay.jpg);
+      url(../images/desktop/overlay.jpg);
     padding-top: 200px;
     padding-bottom: 200px;
 
