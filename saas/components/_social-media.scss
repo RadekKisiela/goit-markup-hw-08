@@ -1,10 +1,11 @@
 .social-media {
   display: flex;
   gap: 10px;
+  align-items: center;
   justify-content: space-around;
+
   padding-right: 32px;
   padding-left: 32px;
-  padding-top: 16px;
   &--footer {
     display: flex;
     gap: 10px;
