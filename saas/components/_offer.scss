@@ -1,12 +1,11 @@
 @media (min-width: 480px) {
   .offer {
     display: inline-block;
-    &__item {
-      margin-left: 15px;
-    }
+
     &__icon {
       justify-content: center;
       margin-bottom: 30px;
+
       width: 450px;
       height: 120px;
       background-color: #f5f4fa;
@@ -50,26 +49,16 @@
 }
 @media (min-width: 1200px) {
   .offer {
-    position: relative;
     display: flex;
     justify-content: space-around;
     align-items: center;
     &__item {
-      margin-left: 0;
+      margin: 0;
     }
     &__icon {
-      margin-bottom: 30px;
       width: 270px;
     }
-    &__title {
-      color: var(--text-color-primary);
-      font-weight: 700;
-      text-transform: uppercase;
-      font-size: 14px;
-      line-height: 1.17;
-      letter-spacing: 0.03em;
-      margin-bottom: 10px;
-    }
+
     &__paragraph {
       width: 270px;
     }
