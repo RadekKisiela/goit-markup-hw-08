@@ -113,24 +113,24 @@
 }
 @media (min-width: 1200px) {
   .footer {
-    &__wraper {
-      flex-direction: row;
-    }
     &__list {
-      flex-wrap: nowrap;
+      flex-direction: row;
+      min-width: 1200px;
+      align-items: center;
     }
     &__title {
       text-align: start;
     }
     &__field {
-      padding: 15px 120px 15px 16px;
-    }
-    &__button {
-      display: inline-flex;
+      padding: 15px 150px 15px 16px;
     }
     &__link {
-      display: flex;
       margin-right: 30px;
+    }
+    &__item {
+      display: flex;
+      flex-direction: row;
+      gap: 12px;
     }
     &__box {
       &-logo {
