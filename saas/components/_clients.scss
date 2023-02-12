@@ -1,26 +1,41 @@
-.clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
-  background-color: var(--background-color-primary);
+@media (min-width: 480px) {
+  .clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background-color: var(--background-color-primary);
 
-  &__icon {
-    fill: var(--color-primary);
-    border: 1px solid var(--color-primary);
-    border-radius: 4px;
-    width: 170px;
-    height: 92px;
-    padding: 16px 32px;
-    &:focus,
-    &:hover {
-      border-color: var(--background-color-quaternary);
-      fill: var(--background-color-quaternary);
+    &__icon {
+      fill: var(--color-primary);
+      border: 1px solid var(--color-primary);
+      border-radius: 4px;
+      max-width: 210px;
+      padding: 16px 52px;
+      &:focus,
+      &:hover {
+        border-color: var(--background-color-quaternary);
+        fill: var(--background-color-quaternary);
+      }
+    }
+    &__list {
+      position: relative;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 30px;
     }
   }
-  &__list {
-    position: relative;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 30px;
+}
+@media (min-width: 768px) {
+  .clients {
+    &__icon {
+      padding: 16px 52px;
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .clients {
+    &__icon {
+      padding: 16px 32px;
+    }
   }
 }
