@@ -1,8 +1,9 @@
 .form {
+  min-width: 370px;
   display: flex;
   flex-direction: column;
   &__comment {
-    width: 448px;
+    width: 370px;
     height: 120px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
@@ -29,8 +30,6 @@
   }
   &__label {
     position: relative;
-    width: 448px;
-    height: 40px;
   }
   &__paragraph {
     color: var(--color-tertiary);
@@ -42,7 +41,7 @@
   }
   &__field {
     position: relative;
-    width: 448px;
+    min-width: 370px;
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
