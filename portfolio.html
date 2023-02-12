@@ -9,7 +9,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet" />
-  <link rel="stylesheet" href="./css/modern-normalizer.css" />
   <link rel="stylesheet" href="./css/main.min.css" />
 </head>
 <body>
@@ -17,15 +16,20 @@
     <div class="container header__container">
       <nav class="header__nav">
         <a class="logo" href="index.html">Web<span class="logo--dark">Studio</span></a>
+        <button class="header__button js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg width="40" height="40">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
         <ul class="header__list">
 
-          <li><a class="header__menu-item" href="index.html">Agencja</a></li>
-          <li><a class="header__menu-item header__menu-item--active" href="portfolio.html">Portfolio</a></li>
+          <li><a class="header__menu-item header__menu-item--active" href="index.html">Agencja</a></li>
+          <li><a class="header__menu-item" href="portfolio.html">Portfolio</a></li>
           <li><a class="header__menu-item" href="#">Kontakt</a></li>
         </ul>
       </nav>
       <ul class="header__contact">
-        <li>
+        <li class="contact__list">
           <a class="header__link" href="mailto:info@devstudio">
             <svg class="header__icon" width="16px" height="12px">
               <use href="./images/icons.svg#icon-envelope-1"></use>
@@ -40,6 +44,7 @@
             +48 111 111 111</a>
         </li>
       </ul>
+
     </div>
   </header>
   <main>
@@ -156,61 +161,110 @@
       </div>
     </section>
   </main>
+  <div class="menu-container js-menu-container" id="mobile-menu">
+    <button class="menu__button js-close-menu">
+      <svg width="40" height="40">
+        <use href="./images/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+    <div class="mobile-menu">
+      <ul class="mobile-menu__list mobile-menu__list--gap">
+        <li>
+          <a href="index.html" class="link__mobile link__mobile--active">Agencja</a>
+        </li>
+        <li>
+          <a href="portfolio.html" class="link__mobile">Portfolio</a>
+        </li>
+        <li>
+          <a href="#" class="link__mobile">Kontakt</a>
+        </li>
+      </ul>
+      <div>
+        <ul class="mobile-menu__list">
+          <li>
+            <a class="link__mobile mobile-menu__phone" href="tel:+48111111111">+48 111 111 111</a>
+          </li>
+          <li>
+            <a class="link__mobile--mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+        </ul>
+        <ul class="mobile-menu__social-list">
+          <li>
+            <a class="link__mobile mobile-menu__social-link" href="#">Instagram</a>
+          </li>
+          <li>
+            <a class="link__mobile mobile-menu__social-link" href="#">Twitter</a>
+          </li>
+          <li>
+            <a class="link__mobile mobile-menu__social-link" href="#">Facebook</a>
+          </li>
+          <li>
+            <a class="link__mobile mobile-menu__social-link mobile-menu__social-link--not-bordered"
+              href="#">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
   <footer class="footer">
-    <div class="container">
+    <div class="container footer__wrapper">
       <ul class="footer__list">
-        <li>
-          <a class="logo" href="index.html">Web<span class="logo--light">Studio</span></a>
-          <address class="footer__address" id="kontakt">
-            <ul>
-              <li>
-                <p class="footer__paragraph">m. Warszawa, Aleje Jerozolimskie 21</p>
-              </li>
-              <li>
-                <a class="footer__link" href="mailto:info@devstudio">info@devstudio.com</a>
-              </li>
-              <li>
-                <a class="footer__link" href="tel:+48111111111">+48 111 111 111</a>
-              </li>
-            </ul>
-        </li>
-        <li>
-          <h3 class="footer__title">DOŁĄCZ DO NAS</h3>
-          <div class="social-media">
-            <button class="social-media__button">
-              <svg width="20px" height="20px">
-                <use class="social-media__icon--footer" href="./images/icons.svg#icon-instagram-2"></use>
-              </svg></button>
-            <button class="social-media__button">
-              <svg width="20px" height="20px">
-                <use class="social-media__icon--footer" href="./images/icons.svg#icon-facebook-1"></use>
-              </svg></button>
-            <button class="social-media__button">
-              <svg width="20px" height="20px">
-                <use class="social-media__icon--footer" href="./images/icons.svg#icon-twitter-1"></use>
-              </svg></button>
-            <button class="social-media__button">
-              <svg width="20px" height="20px">
-                <use class="social-media__icon--footer" href="./images/icons.svg#icon-linkedin-1"></use>
-              </svg></button>
-          </div>
-        <li>
-
-          <h3 class="footer__title">ZAPISZ SIĘ DO NEWSLETTERA</h3>
-          <div class="newsletter">
-            <form name="signup_form" autocomplete="on" novalidate>
-              <label>
-
-                <input class="footer__field" type="email" name="email" placeholder="E-mail" />
-                <button class="footer__button" type="submit">Zapisz się <svg class="newsletter__icon" width="24px"
-                    height="24px">
-                    <use href="./images/icons.svg#icon-icon-send"></use>
-                  </svg>
-                </button>
-
-              </label>
-          </div>
-        </li>
+        <div class="footer__box-logo">
+          <li>
+            <a class="logo" href="index.html">Web<span class="logo--light">Studio</span></a>
+            <address class="footer__address" id="kontakt">
+              <ul>
+                <li>
+                  <p class="footer__paragraph">m. Warszawa, Aleje Jerozolimskie 21</p>
+                </li>
+                <li>
+                  <a class="footer__link" href="mailto:info@devstudio">info@devstudio.com</a>
+                </li>
+                <li>
+                  <a class="footer__link" href="tel:+48111111111">+48 111 111 111</a>
+                </li>
+              </ul>
+          </li>
+        </div>
+        <div class="footer__box-media">
+          <li>
+            <h3 class="footer__title">DOŁĄCZ DO NAS</h3>
+            <div class="social-media--footer">
+              <button class="social-media__button">
+                <svg width="20px" height="20px">
+                  <use class="social-media__icon--footer" href="./images/icons.svg#icon-instagram-2"></use>
+                </svg></button>
+              <button class="social-media__button">
+                <svg width="20px" height="20px">
+                  <use class="social-media__icon--footer" href="./images/icons.svg#icon-facebook-1"></use>
+                </svg></button>
+              <button class="social-media__button">
+                <svg width="20px" height="20px">
+                  <use class="social-media__icon--footer" href="./images/icons.svg#icon-twitter-1"></use>
+                </svg></button>
+              <button class="social-media__button">
+                <svg width="20px" height="20px">
+                  <use class="social-media__icon--footer" href="./images/icons.svg#icon-linkedin-1"></use>
+                </svg></button>
+            </div>
+          </li>
+        </div>
+        <div class="footer__box-newsletter">
+          <li>
+            <h3 class="footer__title">ZAPISZ SIĘ DO NEWSLETTERA</h3>
+            <div class="newsletter">
+              <form name="signup_form" autocomplete="on" novalidate>
+                <label class="footer__item">
+                  <input class="footer__field" type="email" name="email" placeholder="E-mail" />
+                  <button class="footer__button" type="submit">Zapisz się <svg class="newsletter__icon" width="24px"
+                      height="24px">
+                      <use href="./images/icons.svg#icon-icon-send"></use>
+                    </svg>
+                  </button>
+                </label>
+            </div>
+          </li>
+        </div>
         </address>
         </li>
       </ul>
