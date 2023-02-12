@@ -110,14 +110,17 @@
     &::after {
       position: absolute;
       content: '';
-      top: 60px;
+      top: 45px;
     }
   }
   .header {
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     &__contact {
       flex-direction: row;
+    }
+    &__link {
+      padding-bottom: 0;
     }
   }
 }
